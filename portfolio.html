@@ -1,0 +1,330 @@
+Ibrohim, [05/12/2025 13:11]
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ibrohim — Portfolio</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Oddiy, zamonaviy styling */
+    :root{
+      --main-bg: #0d6efd;
+      --accent: #0b5ed7;
+      --muted: #6c757d;
+    }
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+    header.hero {
+      background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+      color: white;
+      padding: 80px 0;
+    }
+    .hero .avatar {
+      width: 160px; height:160px; object-fit:cover; border-radius: 12px; border:4px solid rgba(255,255,255,0.18);
+    }
+    .section-title { margin-bottom: 1.5rem; }
+    .skill-badge { min-width: 110px; }
+    .project-card img { height:160px; object-fit:cover; border-bottom: 6px solid rgba(0,0,0,0.04); }
+    footer { padding: 30px 0; background:#f8f9fa; margin-top: 60px; }
+    .nav-link.active { font-weight:600; }
+    /* Responsive tweaks */
+    @media (max-width:575px){ .hero { padding: 40px 0; } .avatar{ width:120px; height:120px; } }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Ibrohim Davronov</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+      aria-controls="nav" aria-expanded="false" aria-label="toggle">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7 text-white">
+        <h1 class="display-6 fw-bold">Davronov Ibrohim.</h1>
+        <p class="lead">IT talabasi va dasturchi. Web/Frontend loyihalar, oddiy backend va portfolio sahifalarini yarataman.</p>
+        <p>
+          <a href="#projects" class="btn btn-light btn-lg me-2">Loyihalarim</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg">Kontakt</a>
+        </p>
+        <ul class="list-inline mt-4">
+          <li class="list-inline-item text-white-50 me-3">📧 <a class="text-white" href="mailto:you@example.com">ibrohimdavrono286@gmail.com</a></li>
+          <li class="list-inline-item text-white-50">💬 <a class="text-white" href="https://t.me/yourtelegram" target="_blank">https://t.me/d1lmurod_v1ch</a></li>
+        </ul>
+      </div>
+      <div class="col-md-5 text-center">
+        <!-- Rasmni almashtir: src o'rniga o'zingning rasm URL qo'y -->
+        <img src="https://picsum.photos/seed/ibrohim/360" alt="Ibrohim" class="avatar shadow-lg">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Men haqimda</h2>
+    <p>Men IT sohasini oʻrganayotgan talabaman. Asosan frontend (HTML/CSS/JS), Bootstrap va boshlangʻich React bilan ishlayman. Loyihalarim orqali tajriba toʻplab, haqiqiy muammolarni yechishni yoqtiraman.</p>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Ta'lim:</strong> Universitet, IT fakulteti (4-kurs)</li>
+          <li class="list-group-item"><strong>Til:</strong> Oʻzbekcha (asosiy), Inglizcha (pre-intermediate)</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="mb-2">Qisqa maqsad</h5>
+
+Ibrohim, [05/12/2025 13:11]
+<p class="mb-0">Yaxshi dasturchi boʻlish, mustaqil loyihalar yaratish va freelancing orqali tajriba oshirish.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">Koʻnikmalar</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="d-flex align-items-center mb-3">
+          <span class="badge bg-primary skill-badge me-3">HTML/CSS</span>
+          <div class="w-100">
+            <div class="progress" style="height:10px">
+              <div class="progress-bar" role="progressbar" style="width:85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-3">
+          <span class="badge bg-primary skill-badge me-3">JavaScript</span>
+          <div class="w-100">
+            <div class="progress" style="height:10px">
+              <div class="progress-bar" role="progressbar" style="width:70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-3">
+          <span class="badge bg-primary skill-badge me-3">Bootstrap</span>
+          <div class="w-100">
+            <div class="progress" style="height:10px">
+              <div class="progress-bar" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+        <div class="d-flex align-items-center mb-3">
+          <span class="badge bg-primary skill-badge me-3">React (boshlang'ich)</span>
+          <div class="w-100">
+            <div class="progress" style="height:10px">
+              <div class="progress-bar" role="progressbar" style="width:40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-3">
+          <span class="badge bg-primary skill-badge me-3">Git</span>
+          <div class="w-100">
+            <div class="progress" style="height:10px">
+              <div class="progress-bar" role="progressbar" style="width:60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-muted mt-3 small">Progress foizlarini oʻzingizning haqiqiy darajaga moslab oʻzgartiring.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Loyihalar</h2>
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-4">
+        <div class="card project-card shadow-sm">
+          <img src="https://picsum.photos/seed/proj1/600/400" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio sayt (Bu namuna)</h5>
+            <p class="card-text text-muted small">HTML/CSS/Bootstrap bilan yaratilgan oddiy portfolio.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#projModal" data-title="Portfolio sayt" data-desc="To'liq kod va izoh.">Ko'proq</a>
+              <a href="#" class="btn btn-sm btn-outline-secondary">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4">
+        <div class="card project-card shadow-sm">
+          <img src="https://picsum.photos/seed/proj2/600/400" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">To-do App</h5>
+            <p class="card-text text-muted small">JavaScript bilan oddiy vazifalar roʻyxati (localStorage bilan).</p>
+            <div class="d-flex justify-content-between align-items-center">
+
+Ibrohim, [05/12/2025 13:11]
+<a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#projModal" data-title="To-do App" data-desc="Vanilla JS + localStorage.">Ko'proq</a>
+              <a href="#" class="btn btn-sm btn-outline-secondary">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <div class="card project-card shadow-sm">
+          <img src="https://picsum.photos/seed/proj3/600/400" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Yandex/Uzum Courier UI</h5>
+            <p class="card-text text-muted small">Mobil uchun moslashuvchan UI mockup.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#projModal" data-title="Courier UI" data-desc="Figma dizaynini frontendga aylantirish.">Ko'proq</a>
+              <a href="#" class="btn btn-sm btn-outline-secondary">Rasm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Project modal -->
+<div class="modal fade" id="projModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Loyiha</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Yopish"></button>
+      </div>
+      <div class="modal-body">
+        <h4 id="projTitle"></h4>
+        <p id="projDesc" class="text-muted"></p>
+        <p class="small text-muted">Qoʻshimcha maʼlumot: texnologiyalar, manba, demo havolasi va hokazo.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">Kontakt</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Agar biror loyiha yoki ish bo'lsa, yozing:</p>
+        <ul class="list-unstyled">
+          <li>📧 Email: <a href="mailto:you@example.com">ibrohimdavrono286@gmail.com</a></li>
+          <li>💬 Telegram: <a href="https://t.me/yourtelegram" target="_blank">https://t.me/d1lmurod_v1ch</a></li>
+        </ul>
+        <p class="text-muted small">Contact form faqat namuna — brauzer mailto yordamida ochadi.</p>
+      </div>
+      <div class="col-md-6">
+        <form id="contactForm" onsubmit="sendMail(event)">
+          <div class="mb-3">
+            <label class="form-label">Ismingiz</label>
+            <input type="text" id="name" class="form-control" placeholder="Ism" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="email@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Xabar</label>
+            <textarea id="message" class="form-control" rows="4" placeholder="Xabar..." required></textarea>
+          </div>
+          <button class="btn btn-primary">Yuborish</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container text-center">
+    <small class="text-muted">© <span id="year"></span> Ibrohim Davronov — Portfolio. Barcha huquqlar himoyalangan.</small>
+  </div>
+</footer>
+
+<!-- Bootstrap JS (Popper + JS) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Yilni avtomatik qo'yish
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Smooth scroll va active nav link
+  document.querySelectorAll('a.nav-link, a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', function(e){
+      const href = this.getAttribute('href');
+      if(href && href.startsWith('#')){
+        e.preventDefault();
+        const el = document.querySelector(href);
+        if(el) el.scrollIntoView({behavior:'smooth', block: 'start'});
+        // mobile menu yopish
+
+Ibrohim, [05/12/2025 13:11]
+const bsCollapse = document.querySelector('.navbar-collapse');
+        if(bsCollapse && bsCollapse.classList.contains('show')){
+          new bootstrap.Collapse(bsCollapse).hide();
+        }
+      }
+    });
+  });
+
+  // Project modalga ma'lumot joylash
+  const projModal = document.getElementById('projModal');
+  projModal.addEventListener('show.bs.modal', function (event) {
+    const button = event.relatedTarget;
+    const title = button.getAttribute('data-title') || 'Loyiha';
+    const desc = button.getAttribute('data-desc') || 'Tavsif mavjud emas.';
+    document.getElementById('projTitle').textContent = title;
+    document.getElementById('projDesc').textContent = desc;
+  });
+
+  // Contact form: mailto orqali ochadi (server bo'lmasa shu yetadi)
+  function sendMail(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const msg = document.getElementById('message').value.trim();
+    const subject = encodeURIComponent('Portfolio orqali xabar: ' + name);
+    const body = encodeURIComponent('Ism: ' + name + '\\nEmail: ' + email + '\\n\\n' + msg);
+    window.location.href = mailto:you@example.com?subject=${subject}&body=${body};
+  }
+</script>
+
+</body>
+</html>
